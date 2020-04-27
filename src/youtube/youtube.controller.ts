@@ -1,5 +1,5 @@
 import { Controller, Post, Get, Body, Put, Delete, Param } from '@nestjs/common';
-import { YoutubeService } from './service';
+import { YoutubeService } from './youtube.service';
 
 @Controller()
 export class YoutubeController {

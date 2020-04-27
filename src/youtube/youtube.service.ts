@@ -2,7 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import { Youtube } from './youtube.interface';
-import { CreateYoutubeDto } from './create-youtube.dto';
+import { CreateYoutubeDto } from './youtube.entity';
 
 @Injectable()
 export class YoutubeService {
