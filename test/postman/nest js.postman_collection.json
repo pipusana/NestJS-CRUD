@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "a93ca868-c18a-4dbd-a769-b115fda4148b",
+		"name": "nest js",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"jimmie\",\n\t\"like\": 1,\n\t\"dislike\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/youtube",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"youtube"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"workpoint\",\n\t\"like\": 2,\n\t\"dislike\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/youtube",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"youtube"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"5ea6ec9a961902866d459756\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/youtube/5ea6ef1661068f880b813962",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"youtube",
+						"5ea6ef1661068f880b813962"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"5ea6ec9a961902866d459756\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/youtube/5ea6ec9a961902866d459756",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"youtube",
+						"5ea6ec9a961902866d459756"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"5ea6ef1661068f880b813962\",\n    \"dislike\": 8000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/youtube/5ea6ef1661068f880b813962",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"youtube",
+						"5ea6ef1661068f880b813962"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
